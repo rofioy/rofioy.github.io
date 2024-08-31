@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+.titleHero.animate__animated.animate__backInDown {
+  --animate-duration: 2.5s;
+}
+.instagram.animate__animated.animate__backInDown {
+  --animate-duration: 3s;
+}
+.linkedin.animate__animated.animate__backInDown {
+  --animate-duration: 3.5s;
+}
+.github.animate__animated.animate__backInDown {
+  --animate-duration: 4s;
+}
+.btaHireMe.animate__animated.animate__backInDown {
+  --animate-duration: 4.5s;
+}
+.btaContact.animate__animated.animate__backInDown {
+  --animate-duration: 4.5s;
+}
+.imgHero.animate__animated.animate__backInRight {
+  --animate-duration: 5s;
+}
