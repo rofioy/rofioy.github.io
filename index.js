@@ -47,29 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Animation Nav Item
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the back-to-top button element
-  const backToTopButton = document.querySelector('.btnToUp');
-
-  // Add click event listener for the back-to-top button
-  backToTopButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-
-  // Optional: Show or hide the back-to-top button based on scroll position
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      backToTopButton.classList.remove('opacity-0', 'invisible');
-      backToTopButton.classList.add('opacity-100', 'visible');
-    } else {
-      backToTopButton.classList.remove('opacity-100', 'visible');
-      backToTopButton.classList.add('opacity-0', 'invisible');
-    }
-  });
-
   // Add smooth scroll behavior for navigation links
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
   navLinks.forEach(link => {
