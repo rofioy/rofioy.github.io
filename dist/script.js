@@ -33,3 +33,25 @@ btnToProjects.addEventListener('click', (e) => {
   e.preventDefault();
   document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 });
+
+function toggleSkill(element) {
+  // Toggle class active
+  element.classList.toggle('mobile-active');
+
+  // Close other skills
+  document.querySelectorAll('.skill-item').forEach((skill) => {
+    if (skill !== element) {
+      skill.classList.remove('mobile-active');
+    }
+  });
+}
+
+// Close skill ketika klik di luar
+document.addEventListener('click', (e) => {
+  const isSkillItem = e.target.closest('.skill-item');
+  if (!isSkillItem) {
+    document.querySelectorAll('.skill-item').forEach((skill) => {
+      skill.classList.remove('mobile-active');
+    });
+  }
+});
