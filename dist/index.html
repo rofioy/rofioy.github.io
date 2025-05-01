@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rofi Syarif Hidayat</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+  </head>
+  <body class="font-body bg-gray-100 text-gray-800 scroll-smooth">
+    <header
+      id="hero"
+      class="min-h-screen flex flex-col md:flex-row items-center bg-slate-200 text-white py-16 px-8 md:px-16 lg:px-24 relative overflow-hidden"
+    >
+      <!-- Animated background elements -->
+      <div class="absolute inset-0 opacity-10 bg-grid-white/20"></div>
+
+      <!-- Container  -->
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-center items-center w-full"
+      >
+        <!-- Image -->
+        <div
+          class="image-container mx-auto mb-12 md:mb-0 md:mr-16 lg:mr-24 relative group"
+        >
+          <!-- Profile image with frame -->
+          <div
+            class="relative z-10 rounded-full w-64 h-64 md:w-80 md:h-80 overflow-hidden border-4 border-emerald-500 shadow-2xl transform transition-transform duration-500 hover:scale-105"
+          >
+            <img
+              src="../img/profile-image.PNG"
+              alt="Profile Picture"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- Decorative element -->
+          <div
+            class="absolute -inset-8 bg-white/50 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"
+          ></div>
+        </div>
+
+        <!-- Description Section -->
+        <div
+          class="header-description relative text-center md:text-left max-w-2xl"
+        >
+          <!-- Subtle badge -->
+          <span
+            class="mb-4 inline-block bg-white/50 text-slate-700 px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm"
+          >
+            👋 Hello, I'm a Junior Web Developer
+          </span>
+
+          <!-- Name with text stroke effect -->
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+          >
+            <span class="text-stroke-white text-slate-700"
+              >Rofi Syarif Hidayat</span
+            >
+          </h1>
+
+          <!-- Profession with gradient text -->
+          <p class="text-xl md:text-2xl mb-8 font-medium text-slate-700">
+            Junior Front-end Web Developer
+          </p>
+
+          <!-- CTA Button with hover animation -->
+          <a
+            id="btnProjects"
+            href="#projects"
+            class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full font-semibold hover:text-emerald-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl active:scale-95"
+          >
+            <span class="flex items-center">
+              <span class="mr-3">See projects</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Animation -->
+      <div
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block"
+      >
+        <div
+          class="w-6 h-10 border-2 border-emerald-600 rounded-full flex items-start justify-center"
+        >
+          <div
+            class="w-1 h-2 bg-emerald-600 rounded-full mt-1 animate-scroll"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-5xl mx-auto my-16 p-8 rounded-lg shadow">
+      <div class="about-description mb-12">
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed tracking-wide">
+          Hi! I'm Rofi Syarif Hidayat, a 6th-semester Information Systems
+          student at Universitas Amikom Purwokerto.
+        </p>
+        <p class="text-lg leading-relaxed tracking-wide">
+          I'm currently focusing on enhancing my skills in Front-End
+          Development, particularly in HTML, CSS (Tailwind CSS), and JavaScript.
+        </p>
+        <p class="text-lg leading-relaxed tracking-wide">
+          I'm actively working on web projects while continuously expanding my
+          knowledge in web development. Although I'm still in the learning
+          phase, I'm open to opportunities such as internships, freelance work,
+          or collaborative projects in the field.
+        </p>
+        <p class="text-lg leading-relaxed tracking-wide">
+          I believe in continuous learning and growth as a developer, and I'm
+          always excited to take on new challenges. Thank you for visiting my
+          portfolio!
+        </p>
+      </div>
+      <!-- Skills Grid -->
+      <div
+        class="skill-item grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+      >
+        <!-- Skill Icon 1 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                fill="#E44D26"
+                d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                HTML
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-orange-600 rounded-full transition-all duration-500 w-0 group-hover:w-5/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 1 End -->
+        <!-- Skill Icon 2 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col space-y-4 justify-center">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                fill="#1572B6"
+                d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626L119.24 1H8.76zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336L64 101.607v.001l-.022.019-28.311-7.888L33.75 72h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229L81.075 65H48.792l-.277-3.043-.631-7.129L47.553 51h34.749l1.264-14H30.64l-.277-3.041-.63-7.131L29.401 23h69.281l-.331 3.862z"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                CSS
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-sky-500 rounded-full transition-all duration-500 w-0 group-hover:w-4/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 2 End -->
+        <!-- Skill Icon 3 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                fill="#38bdf8"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                Tailwind
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-sky-500 rounded-full transition-all duration-500 w-0 group-hover:w-4/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 3 End -->
+        <!-- Skill Icon 4 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="76.079"
+                  x2="523.48"
+                  y1="10.798"
+                  y2="365.95"
+                  gradientTransform="translate(1.11 14.613) scale(.24566)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#9013fe"></stop>
+                  <stop offset="1" stop-color="#6610f2"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="b"
+                  x1="193.51"
+                  x2="293.51"
+                  y1="109.74"
+                  y2="278.87"
+                  gradientTransform="translate(0 52)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#fff"></stop>
+                  <stop offset="1" stop-color="#f1e5fc"></stop>
+                </linearGradient>
+                <filter
+                  id="c"
+                  width="197"
+                  height="249"
+                  x="161.9"
+                  y="135.46"
+                  color-interpolation-filters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                >
+                  <feFlood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feFlood>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  ></feColorMatrix>
+                  <feOffset dy="4"></feOffset>
+                  <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                  <feColorMatrix
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  ></feBlend>
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  ></feBlend>
+                </filter>
+              </defs>
+              <path
+                fill="url(#a)"
+                d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+              ></path>
+              <path
+                fill="url(#b)"
+                d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+                filter="url(#c)"
+                transform="translate(1.494 2.203) scale(.24566)"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                Bootstrap
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-violet-700 rounded-full transition-all duration-500 w-0 group-hover:w-2/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 4 End -->
+        <!-- Skill Icon 5 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                fill="#F0DB4F"
+                d="M1.408 1.408h125.184v125.185H1.408z"
+              ></path>
+              <path
+                fill="#323330"
+                d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+              ></path>
+            </svg>
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                JavaScript
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-yellow-400 rounded-full transition-all duration-500 w-0 group-hover:w-3/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 5 End -->
+        <!-- Skill Icon 6 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <g fill="#61DAFB">
+                <circle cx="64" cy="64" r="11.4"></circle>
+                <path
+                  d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
+                ></path>
+              </g>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                React.Js
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-sky-400 rounded-full transition-all duration-500 w-0 group-hover:w-0/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 6 End -->
+        <!-- Skill Icon 7 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <circle cx="64" cy="64" r="64"></circle>
+              <path
+                fill="url(#a)"
+                d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"
+              ></path>
+              <path fill="url(#b)" d="M81.778 38.4h8.533v51.2h-8.533z"></path>
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="109"
+                  x2="144.5"
+                  y1="116.5"
+                  y2="160.5"
+                  gradientTransform="scale(.71111)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#fff"></stop>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="b"
+                  x1="121"
+                  x2="120.799"
+                  y1="54"
+                  y2="106.875"
+                  gradientTransform="scale(.71111)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#fff"></stop>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                Next.Js
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-slate-950 rounded-full transition-all duration-500 w-0 group-hover:w-0/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 6 End -->
+        <!-- Skill Icon 8 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                fill="#00618A"
+                d="M0 91.313h4.242V74.566l6.566 14.598c.773 1.77 1.832 2.391 3.914 2.391s3.098-.621 3.871-2.391l6.566-14.598v16.746h4.242V74.594c0-1.633-.652-2.422-2-2.828-3.223-1.004-5.383-.137-6.363 2.039l-6.441 14.41-6.238-14.41c-.937-2.176-3.14-3.043-6.359-2.039-1.348.406-2 1.195-2 2.828zM32.93 77.68h4.238v9.227c-.039.5.16 1.676 2.484 1.715h9.223V77.633h4.25c.02 0-.008 14.984-.008 15.047.023 3.695-4.582 4.496-6.707 4.559H33.02v-2.852l13.414-.004c2.73-.285 2.406-1.645 2.406-2.098v-1.113h-9.012c-4.195-.039-6.863-1.871-6.898-3.977-.004-.191.09-9.422 0-9.516zm0 0"
+              ></path>
+              <path
+                fill="#E48E00"
+                d="M56.391 91.313h12.195c1.426 0 2.813-.301 3.914-.816 1.836-.84 2.73-1.984 2.73-3.48v-3.098c0-1.223-1.016-2.367-3.016-3.125-1.059-.41-2.367-.625-3.629-.625h-5.141c-1.711 0-2.527-.516-2.73-1.656-.039-.137-.039-.246-.039-.383V76.2c0-.109 0-.219.039-.355.203-.867.652-1.113 2.16-1.25l.41-.027h12.109v-2.824H63.488c-1.711 0-2.609.109-3.426.352-2.527.789-3.629 2.039-3.629 4.215v2.473c0 1.902 2.16 3.535 5.789 3.914l1.223.055h4.406c.164 0 .324 0 .449.027 1.344.109 1.914.355 2.324.844.211.195.332.473.324.758v2.477c0 .297-.203.68-.609 1.004-.367.328-.98.543-1.793.598l-.449.027H56.391zm45.297-4.922c0 2.91 2.164 4.539 6.523 4.867l1.227.055h11.051v-2.828h-11.133c-2.488 0-3.426-.625-3.426-2.121V71.738h-4.238V86.39zm-23.75.148V76.457c0-2.559 1.801-4.113 5.355-4.602a7.976 7.976 0 0 1 1.145-.082h8.047c.41 0 .777.027 1.188.082 3.555.488 5.352 2.043 5.352 4.602v10.082c0 2.078-.762 3.188-2.523 3.914l4.18 3.77h-4.926l-3.379-3.051-3.402.215H84.44a9.23 9.23 0 0 1-2.492-.352c-2.699-.734-4.008-2.152-4.008-4.496zm4.578-.246c0 .137.039.273.082.438.246 1.172 1.348 1.824 3.023 1.824h3.852l-3.539-3.195h4.926l3.086 2.789c.57-.305.941-.766 1.074-1.363.039-.137.039-.273.039-.41v-9.668c0-.109 0-.246-.039-.383-.246-1.09-1.348-1.715-2.984-1.715h-6.414c-1.879 0-3.105.816-3.105 2.098zm0 0"
+              ></path>
+              <path
+                fill="#00618A"
+                d="M124.219 67.047c-2.605-.07-4.598.172-6.301.891-.484.203-1.258.207-1.336.813.266.281.309.699.52 1.039.406.66 1.094 1.539 1.707 2l2.074 1.484c1.273.777 2.699 1.223 3.93 2 .723.461 1.441 1.039 2.148 1.559.348.254.582.656 1.039.816v-.074c-.238-.305-.301-.723-.52-1.039l-.965-.965c-.941-1.25-2.137-2.348-3.41-3.262-1.016-.727-3.281-1.711-3.707-2.891l-.074-.074c.719-.078 1.563-.34 2.223-.516 1.117-.301 2.113-.223 3.262-.52l1.559-.449v-.293c-.582-.598-.996-1.387-1.633-1.93-1.656-1.41-3.469-2.824-5.336-4.004-1.035-.652-2.312-1.074-3.41-1.629-.367-.187-1.016-.281-1.262-.594-.574-.734-.887-1.664-1.332-2.52l-2.668-5.633c-.562-1.285-.93-2.555-1.633-3.707-3.363-5.535-6.988-8.875-12.602-12.156-1.191-.699-2.633-.973-4.148-1.332l-2.449-.148c-.496-.211-1.012-.82-1.48-1.113-1.859-1.176-6.629-3.73-8.008-.371-.867 2.121 1.301 4.191 2.078 5.266.543.754 1.242 1.598 1.629 2.445.258.555.301 1.113.52 1.703.539 1.453 1.008 3.031 1.707 4.375.352.68.738 1.395 1.184 2 .273.371.742.539.816 1.113-.457.641-.484 1.633-.742 2.445-1.16 3.652-.723 8.191.965 10.898.516.828 1.734 2.609 3.41 1.926 1.465-.598 1.137-2.445 1.555-4.078.098-.367.039-.641.223-.887v.074l1.336 2.668c.988 1.59 2.738 3.25 4.223 4.371.773.582 1.379 1.59 2.375 1.93V68.6h-.074c-.195-.297-.496-.422-.742-.664-.582-.57-1.227-1.277-1.703-1.93-1.352-1.832-2.547-3.84-3.633-5.93-.52-.996-.973-2.098-1.41-3.113-.168-.391-.164-.984-.516-1.184-.48.742-1.187 1.344-1.559 2.223-.594 1.402-.668 3.117-.891 4.891l-.148.074c-1.031-.25-1.395-1.312-1.777-2.223-.973-2.305-1.152-6.02-.297-8.672.219-.687 1.219-2.852.813-3.484-.191-.633-.828-1-1.184-1.484a11.7 11.7 0 0 1-1.187-2.074c-.793-1.801-1.164-3.816-2-5.633-.398-.871-1.074-1.75-1.629-2.523-.617-.855-1.305-1.484-1.781-2.52-.168-.367-.398-.957-.148-1.336.078-.254.195-.359.445-.441.43-.332 1.629.109 2.074.293 1.191.496 2.184.965 3.191 1.633.48.32.969.941 1.555 1.113h.668c1.043.238 2.211.07 3.188.367 1.723.523 3.27 1.34 4.668 2.227 4.273 2.695 7.766 6.535 10.156 11.117.387.738.551 1.441.891 2.223.684 1.578 1.543 3.203 2.223 4.746s1.34 3.094 2.297 4.375c.504.672 2.453 1.031 3.336 1.406.621.262 1.637.535 2.223.891 1.125.676 2.211 1.48 3.266 2.223.523.375 2.141 1.188 2.223 1.855zM91.082 38.805a5.26 5.26 0 0 0-1.332.148v.074h.074c.258.535.715.879 1.035 1.336l.742 1.555.074-.07c.461-.324.668-.844.668-1.633-.187-.195-.211-.437-.371-.668-.211-.309-.621-.48-.891-.742zm0 0"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                MySQL
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-sky-700 rounded-full transition-all duration-500 w-0 group-hover:w-4/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 8 End -->
+        <!-- Skill Icon 9 -->
+        <div
+          class="group relative p-6 bg-gray-50 dark:bg-gray-700 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg cursor-pointer opacity-25 hover:opacity-100"
+        >
+          <div class="flex flex-col justify-center space-y-4">
+            <svg
+              viewBox="0 0 128 128"
+              class="w-20 h-20 mx-auto transition-colors duration-300 group-hover:filter group-hover:drop-shadow-lg"
+            >
+              <path
+                fill="#0acf83"
+                d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
+              ></path>
+              <path
+                fill="#a259ff"
+                d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
+              ></path>
+              <path
+                fill="#f24e1e"
+                d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
+              ></path>
+              <path
+                fill="#ff7262"
+                d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
+              ></path>
+              <path
+                fill="#1abcfe"
+                d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
+              ></path>
+            </svg>
+
+            <div class="skill-information text-center">
+              <h3 class="font-semibold text-gray-700 dark:text-gray-200">
+                Figma
+              </h3>
+              <!-- Bar -->
+              <div class="skill-bar mt-2 h-2 bg-gray-200 rounded-full">
+                <div
+                  class="h-full bg-orange-600 rounded-full transition-all duration-500 w-0 group-hover:w-3/5"
+                ></div>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Icon 9 End -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-5xl mx-auto my-16 p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">
+        Featured Projects
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div
+          class="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+        >
+          <div
+            class="relative hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="../img/to-do-list.png"
+              class="w-full h-48 object-cover"
+              alt="Todo List Interface"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <span class="px-3 py-1 bg-white/90 text-sm rounded-full shadow"
+                >Frontend</span
+              >
+              <span class="px-3 py-1 bg-white/90 text-sm rounded-full shadow"
+                >Productivity</span
+              >
+            </div>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-gray-800">
+              Simple Todo List
+            </h3>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              This project is based on a to-do list application from a tutorial.
+              I applied my own design choices, such as customizing the color
+              scheme, to make the app more visually appealing and user-friendly
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tech-badge p-2 rounded-md bg-slate-100">HTML</span>
+              <span class="tech-badge p-2 rounded-md bg-slate-100">CSS</span>
+              <span class="tech-badge p-2 rounded-md bg-slate-100"
+                >JavaScript</span
+              >
+            </div>
+
+            <div class="flex bg-slate-100 rounded-xl justify-evenly p-2 mt-6">
+              <a
+                href="https://todolist-rofi.netlify.app/"
+                target="_blank"
+                class="hover:scale-105 transition-transform duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-8 h-8 lg:w-6 lg:h-6 lg:text-sm mx-auto lucide lucide-radio-icon lucide-radio"
+                >
+                  <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9" />
+                  <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5" />
+                  <circle cx="12" cy="12" r="2" />
+                  <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5" />
+                  <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19" />
+                </svg>
+                <span>Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/rofioy/To-Do-List"
+                target="_blank"
+                class="hover:scale-105 transition-transform duration-150"
+              >
+                <svg
+                  viewBox="0 0 128 128"
+                  class="w-8 h-8 lg:w-6 lg:h-6 lg:text-sm mx-auto"
+                >
+                  <g fill="#181616">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                    ></path>
+                    <path
+                      d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
+                    ></path>
+                  </g>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="max-w-5xl mx-auto my-16 p-8 bg-white rounded-lg shadow"
+    >
+      <h2 class="text-3xl font-bold mb-6">Contact me</h2>
+      <p class="mb-4">
+        Email:
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=rofisyarifhidayat@gmail.com&su=Halo%20Rofi%2C%20Terkait%20Portfolio%20Anda&body=Halo%20Rofi%2C%0A%0ASaya%20melihat%20portfolio%20kamu%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut.%20Ada%20kemungkinan%20kolaborasi%20atau%20peluang%20yang%20ingin%20saya%20tawarkan%20kepada%20kamu%2C%20baik%20itu%20magang%2C%20freelance%2C%20ataupun%20kesempatan%20lain.%0A%0AKalau%20berkenan%2C%20boleh%20dong%20kita%20lanjut%20ngobrol%20di%20email%20ini.%0A%0ATerima%20kasih%2C"
+          target="_blank"
+          class="text-blue-600 hover:underline"
+        >
+          rofisyarifhidayat@gmail.com
+        </a>
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/rofi-syarif-hidayat-6826a3271/"
+          target="_blank"
+          class="text-blue-600 hover:underline"
+          >Rofi Syarif Hidayat</a
+        >
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-slate-200 text-slate-700 text-sm">
+      <p>
+        &copy; 2025 Rofi Syarif Hidayat • Built with HTML, CSS (Tailwind) &
+        JavaScript
+      </p>
+    </footer>
+
+    <!-- Floating Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-8 right-8 bg-slate-700 hover:bg-slate-600 text-white p-4 rounded-full shadow-lg opacity-0 translate-y-8 pointer-events-none transition-all duration-300"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-up-icon lucide-arrow-up"
+      >
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
