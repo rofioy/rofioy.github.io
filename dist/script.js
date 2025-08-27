@@ -2,6 +2,12 @@
 const backToTopButton = document.getElementById('backToTop');
 const btnToProjects = document.getElementById('btnProjects');
 
+// Element for See More Project
+const btnSeeMoreProject = document.getElementById('seeMoreProject');
+const cardProject = document.querySelectorAll('.project-card');
+const initialProjectsToShow = 3;
+let isShowingAll = false;
+
 window.addEventListener('scroll', () => {
   const footer = document.querySelector('footer');
   const footerTop = footer.getBoundingClientRect().top;
@@ -53,5 +59,24 @@ document.addEventListener('click', (e) => {
     document.querySelectorAll('.skill-item').forEach((skill) => {
       skill.classList.remove('mobile-active');
     });
+  }
+});
+
+// EventListener Btn See More Project
+btnSeeMoreProject.addEventListener('click', () => {
+  if (isShowingAll) {
+    // Jika sedang menampilkan semua, sembunyikan kembali
+    for (let i = initialProjectsToShow; i < cardProject.length; i++) {
+      cardProject[i].classList.add('hidden');
+    }
+    btnSeeMoreProject.textContent = 'See More Project';
+    isShowingAll = false;
+  } else {
+    // Jika sedang menyembunyikan, tampilkan semua
+    cardProject.forEach((card) => {
+      card.classList.remove('hidden');
+    });
+    btnSeeMoreProject.textContent = 'See Less Project';
+    isShowingAll = true;
   }
 });
