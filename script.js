@@ -1,3 +1,5 @@
+'use strict';
+
 // Get Element
 const backToTopButton = document.getElementById('backToTop');
 const btnToProjects = document.getElementById('btnProjects');
